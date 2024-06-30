@@ -48,17 +48,17 @@ public class PriceCalculationServiceImpl implements PriceCalculationService {
                     + memberRoleWeightingValueMap.get(memberInputInfoDto.getMemberRole());
         }
 
-        // 正規化用の値で合計価格を割り、割り勘価格計算用の単位価格を計算（百の位で切り上げ）
-        Integer tmpUnitPrice = calcSplitPriceInModel.getTotalPrice() / normalizationValue;
-        Integer unitPrice = (new BigDecimal(tmpUnitPrice)).setScale(-2, RoundingMode.UP).intValue();
+        // 正規化用の値で合計価格を割り、割り勘価格計算用の単位価格を計算
+        Integer unitPrice = calcSplitPriceInModel.getTotalPrice() / normalizationValue;
 
         // 返却値の作成
         CalcSplitPriceOutModel calcSplitPriceOutModel = new CalcSplitPriceOutModel();
         List<MemberOutputInfoDto> memberOutputInfoDtoList = new ArrayList<MemberOutputInfoDto>();
-        // 各人の割り勘価格を計算
+        // 各人の割り勘価格を計算（百の位で切り上げ）
         for (MemberInputInfoDto memberInputInfoDto : calcSplitPriceInModel.getMemberInputInfoDtoList()) {
             Integer memberWeightingValue = memberRoleWeightingValueMap.get(memberInputInfoDto.getMemberRole());
-            Integer memberPrice = memberWeightingValue * unitPrice;
+            Integer memberPrice = new BigDecimal(memberWeightingValue * unitPrice).setScale(-2, RoundingMode.UP)
+                    .intValue();
             MemberOutputInfoDto memberOutputInfoDto = new MemberOutputInfoDto();
             memberOutputInfoDto.setMemberName(memberInputInfoDto.getMemberName());
             memberOutputInfoDto.setMemberPrice(String.valueOf(memberPrice));
