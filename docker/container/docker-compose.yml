@@ -19,6 +19,7 @@ services:
     image: split-bill-app
     ports:
       - 8080:8080
+      - 8484:8484
     depends_on:
       spbdb:
         condition: service_healthy

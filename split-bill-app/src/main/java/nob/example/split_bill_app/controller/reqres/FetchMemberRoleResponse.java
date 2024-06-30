@@ -7,7 +7,7 @@ import lombok.Data;
 import nob.example.split_bill_app.dto.MemberRoleDto;
 
 /**
- * 役職情報取得処理のresponseです。
+ * 役職情報取得処理のレスポンスです。
  * 
  * @author nob
  */

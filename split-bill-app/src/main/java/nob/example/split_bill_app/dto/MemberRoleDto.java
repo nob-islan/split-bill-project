@@ -27,6 +27,6 @@ public class MemberRoleDto {
     /**
      * 重みづけ値
      */
-    @Schema(description = "ユーザID", type = "integer", example = "50")
+    @Schema(description = "ユーザID", type = "integer", example = "5")
     private Integer weightingValue;
 }

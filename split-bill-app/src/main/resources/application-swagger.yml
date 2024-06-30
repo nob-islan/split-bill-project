@@ -6,3 +6,6 @@ sampleapidoc:
     member-role:
       fetch: |
         役職情報を取得します。
+    price-calculation:
+      calc: |
+        割り勘価格を計算します。

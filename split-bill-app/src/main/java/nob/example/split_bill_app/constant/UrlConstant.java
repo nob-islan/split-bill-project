@@ -16,4 +16,9 @@ public class UrlConstant {
      * 役職向けAPI
      */
     public static final String MEMBER_ROLE = "/member-role";
+
+    /**
+     * 価格計算向けAPI
+     */
+    public static final String PRICE_CALCULATION = "/price-calculation";
 }
