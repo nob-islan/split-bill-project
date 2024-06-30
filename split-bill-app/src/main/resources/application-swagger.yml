@@ -1,0 +1,8 @@
+########################
+### Sample API documents
+########################
+sampleapidoc:
+  describe:
+    member-role:
+      fetch: |
+        役職情報を取得します。
