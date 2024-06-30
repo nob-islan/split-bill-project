@@ -66,6 +66,8 @@ public class PriceCalculationServiceImpl implements PriceCalculationService {
         }
         calcSplitPriceOutModel.setMemberOutputInfoDtoList(memberOutputInfoDtoList);
 
+        // TODO はみ出した価格の調整ロジック
+
         return calcSplitPriceOutModel;
     }
 }
