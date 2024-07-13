@@ -24,7 +24,7 @@ public class MemberRoleControllerImpl implements MemberRoleController {
     public FetchMemberRoleResponse fetchMemberRole() {
 
         // サービス呼び出し
-        FetchMemberRoleOutModel fetchMemberRoleOutModel = memberRoleService.fetchMemberOutModel();
+        FetchMemberRoleOutModel fetchMemberRoleOutModel = memberRoleService.fetchMemberRole();
         // 返却値の作成
         FetchMemberRoleResponse fetchMemberRoleResponse = new FetchMemberRoleResponse();
         BeanUtils.copyProperties(fetchMemberRoleOutModel, fetchMemberRoleResponse);
