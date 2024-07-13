@@ -25,7 +25,7 @@ public class MemberRoleServiceImpl implements MemberRoleService {
     private MemberRoleRepository memberRoleRepository;
 
     @Override
-    public FetchMemberRoleOutModel fetchMemberOutModel() {
+    public FetchMemberRoleOutModel fetchMemberRole() {
 
         // repository呼び出し
         List<MemberRole> memberRoleList = memberRoleRepository.findAll();

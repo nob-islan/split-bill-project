@@ -17,5 +17,5 @@ public interface MemberRoleService {
      * 
      * @return 役職情報のリスト
      */
-    FetchMemberRoleOutModel fetchMemberOutModel();
+    FetchMemberRoleOutModel fetchMemberRole();
 }
