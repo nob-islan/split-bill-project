@@ -4,9 +4,9 @@ USE spbdb;
 
 -- テーブル作成: member_role
 CREATE TABLE IF NOT EXISTS member_role (
-    id INT(1) AUTO_INCREMENT
+    id INT AUTO_INCREMENT
     , role_name VARCHAR(8) NOT NULL
-    , weighting_value INT NOT NULL
+    , weighting_value INT(1) NOT NULL
     , PRIMARY KEY(id)
     , UNIQUE(role_name)
 );

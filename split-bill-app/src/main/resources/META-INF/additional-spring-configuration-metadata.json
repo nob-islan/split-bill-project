@@ -9,6 +9,11 @@
       "name": "sampleapidoc.describe.price-calculation.calc",
       "type": "java.lang.String",
       "description": "A description for 'sampleapidoc.describe.price-calculation.calc'"
+    },
+    {
+      "name": "sampleapidoc.describe.member-role.regist",
+      "type": "java.lang.String",
+      "description": "A description for 'sampleapidoc.describe.member-role.regist'"
     }
   ]
 }
