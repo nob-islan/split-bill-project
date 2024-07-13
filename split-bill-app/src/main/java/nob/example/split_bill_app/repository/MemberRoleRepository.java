@@ -11,6 +11,6 @@ import nob.example.split_bill_app.repository.entity.MemberRole;
  * @author nob
  */
 @Repository
-public interface MemberRoleRepository extends JpaRepository<MemberRole, Integer> {
+public interface MemberRoleRepository extends JpaRepository<MemberRole, String> {
 
 }

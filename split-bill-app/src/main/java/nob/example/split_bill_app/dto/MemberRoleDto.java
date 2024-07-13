@@ -13,12 +13,6 @@ import lombok.Data;
 public class MemberRoleDto {
 
     /**
-     * ID
-     */
-    @Schema(description = "ID", type = "integer", example = "1")
-    private Integer id;
-
-    /**
      * 役職名
      */
     @Schema(description = "役職名", type = "string", example = "部長")
