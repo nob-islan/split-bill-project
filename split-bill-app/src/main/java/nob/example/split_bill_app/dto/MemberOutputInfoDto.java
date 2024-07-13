@@ -21,6 +21,6 @@ public class MemberOutputInfoDto {
     /**
      * 割り勘価格
      */
-    @Schema(description = "割り勘価格", type = "string", example = "65000")
-    private String memberPrice;
+    @Schema(description = "割り勘価格", type = "integer", example = "13000")
+    private Integer memberPrice;
 }

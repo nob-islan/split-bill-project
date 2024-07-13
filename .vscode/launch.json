@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SplitBillAppApplication",
+      "request": "launch",
+      "mainClass": "nob.example.split_bill_app.SplitBillAppApplication",
+      "projectName": "split-bill-app"
+    },
+    {
+      "type": "java",
       "name": "debug_split-bill-app",
       "request": "attach",
       "hostName": "localhost",
