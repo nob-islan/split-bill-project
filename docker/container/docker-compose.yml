@@ -23,3 +23,8 @@ services:
     depends_on:
       spbdb:
         condition: service_healthy
+  split-bill-web:
+    container_name: split-bill-web
+    image: split-bill-web
+    ports:
+      - 3000:3000
